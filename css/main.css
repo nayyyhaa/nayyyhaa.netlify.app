@@ -80,7 +80,7 @@ hr{
 .article{  
     text-align: left;
     display: inline-block;
-    padding: 3rem;
+    padding: 2rem;
     width: -webkit-fill-available;
 }
 h1{
@@ -112,6 +112,10 @@ h1{
     color: white;
     border-radius: 0.5rem;
     padding: 0.5rem 1rem;
+    display: inline-block;
+    max-width: 140px;
+    margin: auto;
+    margin-top: 1rem;
 }
 .secondary-link{
     text-decoration: none;
@@ -119,6 +123,10 @@ h1{
     color: var(--primary-color);
     border-radius: 0.5rem;
     padding: 0.5rem 1rem;
+    display: inline-block;
+    max-width: 140px;
+    margin: auto;
+    margin-top: 1rem;
 }
 .no-bullet{
     list-style: none;
@@ -161,7 +169,7 @@ header h3{
 }
 .section {
     display: block;
-    padding: 0.5rem 0rem 2rem;
+    padding: 0.5rem 5rem 2rem;
     text-align: center;
 }
 .-ow{
