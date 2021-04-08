@@ -27,8 +27,8 @@
     margin-left: -15px;
 }
 .col{
-    flex: 0 0 50%;
-    max-width: 50%;
+    flex: 1;
+    padding: 1.5rem;
 }
 .-title{
     font-size: 2em;
