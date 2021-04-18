@@ -176,10 +176,18 @@ header h3{
     background-color: var(--off-white);  
 }
 .form{
-    display: flex;
+    display: grid;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    border-radius: 1rem;
+    padding: 0.5rem;
+    margin: auto;
+    width: 50%;
+    background: linear-gradient(to right bottom, rgba(212, 176, 247, 0.555),rgba(171, 55, 238, 0.103));
+}
+.no-flex{
+    display: block;
 }
 .footer li a{
     text-decoration: none;

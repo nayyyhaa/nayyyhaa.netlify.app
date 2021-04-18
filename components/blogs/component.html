@@ -147,12 +147,33 @@
         <p>Forms are used to collect user data</p>
         <p>For now we are redirecting action to dummy html page (in new tab with target="_blank"). Action sends our data to specified URL after clicking on "submit" button.</p>
         <form class="form" target="_blank" action="./sucess.html">
-            <label for="user">Username: </label> <!--links label to input -> automatically selects input on clicking label. -->
-            <input type="text" id="user"><br>
+            <label for="user">Username (max length = 8): </label> <!--links label to input -> automatically selects input on clicking label. -->
+            <input maxLength="8" type="text" name="user" id="user"><br>
+
             <label for="email">Email ID:</label>
-            <input type="email" id="email">
+            <input type="email" name="email" id="email"><br>
+
+            <label for="products">Select Products (from options):</label>
+            <select name="products" id="products">
+                <option value="Macbook 2018">Macbook</option>
+                <option value="Iphone 12">Iphone</option>
+            </select><br>
+
+            <label for="message">Message (textarea): </label>
+            <textarea name="message" id="message" cols="30" rows="5"></textarea><br>
+            
+            <div class="no-flex">
+                <label for="location">Select your loc(radio):</label>
+                <input type="radio" name="location" value="delhi">Delhi
+                <input type="radio" name="location" value="bangalore">Bangalore
+                <br>
+
+                <label for="awesome">Is this awesome? (checkbox): </label>
+                <input type="checkbox" name="awesome" id="yes"><br>
+            </div>
             <button type="submit" class="primary-link">Submit!</button>
         </form>
+        <p>Here value/name <strong>ensures</strong> that they are getting submitted.</p>
         <hr>
 
         <h2>@footer</h2>
