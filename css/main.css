@@ -15,8 +15,7 @@
 .profile{
     /* box-shadow:var(--dark-gray) 2px 5px 5px;
     border-radius: 50%; */
-    width: 450px;
-    height: 450px;
+    height: 350px;
 }
 .-row{
     flex-wrap: wrap;
@@ -28,7 +27,8 @@
 }
 .col{
     flex: 1 1 calc(33.33% - 20px);
-    padding: 1.5rem;
+    padding: 4.5rem;
+    margin: auto;
 }
 .-title{
     font-size: 2em;
@@ -209,3 +209,23 @@ header h3{
     padding: 4rem 1em;
     text-align: center;
 }
+@media screen and (max-width: 800px){
+    .col{
+        padding: 0.5rem;
+    }
+    .-noflex{
+        flex: none;
+    }
+}
+
+@media screen and (max-width: 670px){
+    .col{
+        padding: 2.5rem;
+    }
+}
+@media screen and (max-width: 320px){
+    .col{
+        padding: 0.5rem;
+    }
+}
+
