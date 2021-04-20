@@ -168,12 +168,12 @@ header {
 }
 header img{
     margin:auto;
-    max-width: 350px;
+    max-width: 300px;
     display: block;
 }
 #fig-img{
     margin:auto;
-    max-width: 350px;
+    max-width: 100px;
     display: block;
 }
 header h3{
@@ -189,6 +189,10 @@ header h3{
     padding: 1rem;
     border-radius: 1rem;
     margin: 1rem 0rem;
+}
+aside{
+    float: right;
+    background: var(--off-white);
 }
 .-ow{
     background-color: var(--off-white);  
