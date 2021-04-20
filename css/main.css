@@ -6,6 +6,11 @@
     --dark-gray: #615a5a;
     --off-white: #f3f4f6;
 }
+*{
+    box-sizing: border-box;
+    padding: 0;
+    overflow-x: hidden;
+}
 .site-header{
     display: flex;
     flex-direction: column;
@@ -133,10 +138,17 @@ h1{
 }
 .no-bullet{
     list-style: none;
+    padding: 10px;
+    margin : 0;
 }
 .-inline li {
     display: inline;
     padding: 0.5rem;
+    padding: 10px;
+    margin : 0;
+}
+.skills{
+    padding: 0;
 }
 .navigation{
     background-color: var(--primary-color);
@@ -150,6 +162,8 @@ h1{
 }
 .navigation ul{
     text-align: right;
+    padding: 10px;
+    margin : 0;
 }
 .navigation li a{
     color:white;
@@ -168,7 +182,7 @@ header {
 }
 header img{
     margin:auto;
-    max-width: 300px;
+    max-width: 400px;
     display: block;
 }
 #fig-img{
@@ -213,7 +227,7 @@ aside{
 }
 .footer li a{
     text-decoration: none;
-    color: white
+    color: white;
 }
 .footer{
     color: white;
