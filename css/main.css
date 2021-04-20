@@ -184,6 +184,12 @@ header h3{
     padding: 0.5rem 5rem 2rem;
     text-align: center;
 }
+.comp-article{
+    background: white;
+    padding: 1rem;
+    border-radius: 1rem;
+    margin: 1rem 0rem;
+}
 .-ow{
     background-color: var(--off-white);  
 }
