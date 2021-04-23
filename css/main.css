@@ -138,14 +138,11 @@ h1{
 }
 .no-bullet{
     list-style: none;
-    padding: 10px;
-    margin : 0;
+    overflow-y: hidden;
 }
 .-inline li {
     display: inline;
     padding: 0.5rem;
-    padding: 10px;
-    margin : 0;
 }
 .skills{
     padding: 0;
@@ -162,8 +159,6 @@ h1{
 }
 .navigation ul{
     text-align: right;
-    padding: 10px;
-    margin : 0;
 }
 .navigation li a{
     color:white;
@@ -221,6 +216,9 @@ aside{
     margin: auto;
     width: 50%;
     background: linear-gradient(to right bottom, rgba(212, 176, 247, 0.555),rgba(171, 55, 238, 0.103));
+}
+fieldset{
+    border: none;
 }
 .no-flex{
     display: block;

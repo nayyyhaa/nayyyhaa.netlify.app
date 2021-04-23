@@ -193,13 +193,18 @@
             <textarea name="message" id="message" cols="30" rows="5"></textarea><br>
             
             <div class="no-flex">
-                <label for="location">Select your loc(radio):</label>
-                <input type="radio" name="location" value="delhi">Delhi
-                <input type="radio" name="location" value="bangalore">Bangalore
+                <fieldset>
+                    <legend>Select your loc(radio / fieldset / legend ): </legend>
+                    <label for="location-delhi">Delhi</label>
+                    <input type="radio" name="location" id="location-delhi" value="delhi">
+                    <label for="location-bangalore">Bangalore</label>
+                    <input type="radio" name="location" id="location-bangalore"value="bangalore">
+                </fieldset>
                 <br>
 
                 <label for="awesome">Is this awesome? (checkbox): </label>
-                <input type="checkbox" name="awesome" id="yes"><br>
+                <input type="checkbox" name="awesome" id="awesome"> yes
+                <br>
             </div>
             <button type="submit" class="primary-link">Submit!</button>
         </form>
