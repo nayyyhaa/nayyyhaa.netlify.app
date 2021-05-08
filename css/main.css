@@ -1,4 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+@font-face {
+    font-family: "Vibes";
+    src: url('../assets/fonts/GreatVibes-Regular.ttf');
+}
 :root {
     --primary-color: #B39DDB;
     --secondary-color: #a688dde0;
@@ -17,6 +21,10 @@
     align-items: center;
     padding: 50px 0px;
 }
+.hamburger{
+    display: none;
+    pointer-events: none;
+  }
 .profile{
     /* box-shadow:var(--dark-gray) 2px 5px 5px;
     border-radius: 50%; */
@@ -149,13 +157,14 @@ h1{
 }
 .navigation{
     background-color: var(--primary-color);
-    background-image: linear-gradient(to bottom right, var(--primary-color),var(--secondary-color));
     color: white;
     padding: 1rem 1rem;
     border-bottom-left-radius: 1rem;
 }
 .navigation .brand-name{
-    font-weight: bold;
+    font-family: "Vibes";
+    font-weight: bolder;
+    font-size: 1.5rem;
 }
 .navigation ul{
     text-align: right;
@@ -264,12 +273,41 @@ fieldset{
 /*media queries*/
 
 @media screen and (max-width: 800px){
+    
     .col{
         padding: 0.5rem;
     }
     .-noflex{
         flex: none;
     }
+    .container-fluid{
+        display: flex;
+        justify-content: space-between;
+    }
+    .hamburger{
+        display: block;
+        pointer-events:visible;
+        cursor: pointer;
+        z-index: 3;
+        overflow-y: hidden;
+      }
+      .nav-items{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        left: 100%;
+        top: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        background: var(--primary-color);
+        transition: transform 1s ease 0s;
+        z-index: 2;
+      }
+      .show{
+        transform: translateX(-100%);
+      }
 }
 
 @media screen and (max-width: 670px){
