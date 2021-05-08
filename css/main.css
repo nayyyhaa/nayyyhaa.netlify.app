@@ -13,7 +13,6 @@
 *{
     box-sizing: border-box;
     padding: 0;
-    overflow-x: hidden;
 }
 .site-header{
     display: flex;
@@ -24,6 +23,7 @@
 .hamburger{
     display: none;
     pointer-events: none;
+    overflow-x: hidden;
   }
 .profile{
     /* box-shadow:var(--dark-gray) 2px 5px 5px;
@@ -160,6 +160,9 @@ h1{
     color: white;
     padding: 1rem 1rem;
     border-bottom-left-radius: 1rem;
+    z-index: 10;
+    position: sticky;
+    top: 0;
 }
 .navigation .brand-name{
     font-family: "Vibes";
@@ -273,7 +276,6 @@ fieldset{
 /*media queries*/
 
 @media screen and (max-width: 800px){
-    
     .col{
         padding: 0.5rem;
     }
