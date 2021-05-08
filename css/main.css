@@ -223,19 +223,46 @@ fieldset{
 .no-flex{
     display: block;
 }
-.footer li a{
-    text-decoration: none;
+
+
+
+/*Contact page*/
+
+#connect{
+    min-height: 30vh;
     color: white;
-}
-.footer{
-    color: white;
-    background-color: var(--primary-color);
-    background-image: linear-gradient(to bottom left, var(--secondary-color), var(--primary-color));
-    border-top-right-radius: 1rem;
-    font-weight: bold;
-    padding: 4rem 1em;
+    background: var(--primary-color);
+    padding-bottom: 2rem;
     text-align: center;
-}
+  }
+  .contact-head{
+    color: white;
+    display: grid;
+    place-items: center;
+  }
+  .contact-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+  }
+  .fa{
+    color: white;
+    padding: 1rem;
+    transform: scale(1.4);
+    overflow-y:hidden;
+  }
+  .contact-socials{
+    overflow-y: hidden;
+    flex: 1 1 30rem;
+  }
+  .contact-socials a{
+      text-decoration: none;
+  }
+/*media queries*/
+
 @media screen and (max-width: 800px){
     .col{
         padding: 0.5rem;
