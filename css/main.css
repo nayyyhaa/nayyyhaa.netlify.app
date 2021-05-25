@@ -17,6 +17,9 @@
     font-family: 'Poppins',
     sans-serif;
 }
+.introduction{
+    text-align: left;
+}
 .site-header{
     min-height: 80vh;
     padding: 50px 0px;
