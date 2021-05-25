@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 @font-face {
     font-family: "Vibes";
     src: url('../assets/fonts/GreatVibes-Regular.ttf');
@@ -6,6 +6,7 @@
 :root {
     --primary-color: #B39DDB;
     --secondary-color: #a688dde0;
+    --text-color: #911cffe0;
     --bg-color: rgb(216, 199, 247);
     --dark-gray: #615a5a;
     --off-white: #f3f4f6;
@@ -13,6 +14,8 @@
 *{
     box-sizing: border-box;
     padding: 0;
+    font-family: 'Poppins',
+    sans-serif;
 }
 .site-header{
     min-height: 80vh;
@@ -85,7 +88,17 @@
     border: 2px solid var(--primary-color);
 }
 .colored-text{
-    color: var(--primary-color);
+    color: var(--text-color);
+    position: relative;
+}
+.colored-text.bg:before {
+    position: absolute;
+    content: "";
+    width: 90%;
+    height: 20px;
+    bottom: 0px;
+    background: #ffe6ee;
+    z-index: -1;
 }
 body{
     font-family: 'Open Sans', sans-serif;
@@ -99,20 +112,34 @@ hr{
 }
 .article{  
     text-align: left;
-    display: inline-block;
+    padding: 2rem;
+    max-width: 24rem;
+    height: 28rem;
+    width: -webkit-fill-available;
+    border-radius: 1.5rem;
+    margin: 1rem auto;
+    width: 95%;
+}
+.article-blog{
+    text-align: left;
     padding: 2rem;
     width: -webkit-fill-available;
+    margin: 1rem auto;
+    width: 95%;
 }
 h1{
     font-size: 2em;
+    font-weight: 700;
+}
+.description{
+    font-weight: 500;
 }
 .container{
-    /* display:flex;
-    flex-direction: column;
+    display:flex;
     justify-content: center;
-    align-items: center; */
+    align-items: center;
     margin: auto;
-    max-width: 600px;
+    flex-wrap: wrap;
 }
 .container-about{
     max-width: 1140px;
@@ -121,6 +148,10 @@ h1{
     padding-left: 20px;
     margin-right: auto;
     margin-left: auto;
+}
+.container-blog{
+    max-width: 600px;
+    margin: auto;
 }
 .container-fluid {
     padding-left: 1rem;
@@ -209,6 +240,9 @@ header h3{
     display: block;
     padding: 0.5rem 5rem 2rem;
     text-align: center;
+    border-radius: 1.5rem;
+    width: 95%;
+    margin: 1rem auto;
 }
 .comp-article{
     background: white;
@@ -317,6 +351,9 @@ fieldset{
       }
       .show{
         transform: translateX(-100%);
+      }
+      .section {
+          padding: 0.5rem 2rem 2rem;
       }
 }
 
