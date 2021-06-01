@@ -25,6 +25,7 @@
     padding: 50px 0px;
     width: 90%;
     margin: auto;
+    position: relative;
 }
 .container-homepage .site-header{
     display: flex;
@@ -318,6 +319,15 @@ fieldset{
   }
   .contact-socials a{
       text-decoration: none;
+  }
+  .back-text{
+      position: absolute;
+      top: 0;
+      left: 0;
+  }
+  .back-text a {
+      text-decoration: none;
+      color: var(--secondary-color)
   }
 /*media queries*/
 

@@ -1,0 +1,33 @@
+svg{
+    height: 50%;
+    width: 60%;
+}
+#HTML{
+    animation: jump 0.3s ease-in-out infinite alternate;
+}
+#CSS {
+    animation: jump 0.3s ease-in-out infinite alternate 0.4s;
+}
+#javascript {
+    animation: jump 0.3s ease-in-out infinite alternate 0.2s;
+}
+
+/*animations*/
+
+@keyframes jump {
+    from{
+        transform: translateY(0%);
+    }
+    to{
+        transform: translateY(1%);
+    }
+}
+
+/*media query*/
+
+@media screen and (max-width: 800px) {
+    svg{
+        height: 40%;
+        width: 70%;
+    }
+}
