@@ -1,2 +1,3 @@
 # nehagupta.netlify.app
-My portfolio
+
+Here's the portfolio that I've made using HTML, CSS & VanillaJS.
