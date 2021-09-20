@@ -203,10 +203,12 @@ h1{
     position: sticky;
     top: 0;
 }
-.navigation .brand-name{
+.navigation .brand-name a{
     font-family: "Vibes";
     font-weight: bolder;
     font-size: 1.5rem;
+    color:white;
+    text-decoration: none;
 }
 .navigation ul{
     text-align: right;
